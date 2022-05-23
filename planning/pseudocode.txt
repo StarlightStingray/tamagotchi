@@ -1,0 +1,22 @@
+> Show 'begin game' modal (modal = alert, pop-up, prompt)
+    > If user clicks 'Play', init game
+        > Hide begin game modal.
+        > provide instructions
+            > Possibly have instructions tugged away in a help/read-me icon (to keep game design unobstrusive)
+        > initialize pet (hunger, sleepiness, boredom, hygiene)
+            > possibly as an egg
+        > initialize timers for age, sleepiness, hunger, and boredom
+            - Age increases every five seconds?
+                - If age is 0-5, show baby image
+                - If age is 6-12, show child image
+                - if age is 13-18, show teen image
+                - if age is 18-21, show adult image
+                - if age is 30(40?), pet dies.
+                    -Show game over modal.
+            - hunger increases every minute
+            - Sleepiness increases every 3 seconds
+            - boredom increases ever 4 seconds
+                - If hunger and sleepiness and boredom are at their max level (100), game over and pet dies.
+                    > Show game over modal and invite user to play again.
+        > Add event listeners to the controls, make buttons usable
+            > Feed pet (decrement hunger), play with pet (decrement boredom).

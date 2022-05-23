@@ -1,0 +1,33 @@
+mode = refers to the applications data that needs to be tracked/remembered.
+    data: single source of information for the game. variables and gamestate should be held in variables, not the DOM
+
+view  = what the user sees and interacts with.
+    In the browser app, the view consists of the DOM elements created from the HTML, CSS, and JS.
+
+controller = the bulk of the app's javascrit, excluding the variable sates with represent the Model as described above
+
+
+<<<<Browser game app flow>>>>
+
+>Define constants (variables used to reduce hard-coding of "fixed" values, lookup data structures, etc.)
+
+>Defnie the app's "state" variables, but don't assign values to them (the init function take care of this)
+
+>Select and save (cache) elements in variables that need to be accessed in the JS more than once
+
+>Add event listeners - use delegated event listeners to listen to multiple elements with a single listeners
+
+>Invoke the init function used to initialize all state variables
+
+>Invoke the init function used to initalize all state variables
+    >Reset, Replay, etc?
+
+>Invoke the main render function responsible for transferring all state variables to the DOM
+
+>Wait for User to trigger an event!
+    >Reset, Replay, etc?
+    >Invoke the main render function
+
+>Update all state variables impacted by the user's interaction
+
+>Invoke the main render function
